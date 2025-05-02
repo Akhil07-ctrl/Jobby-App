@@ -92,9 +92,9 @@ const JobItemDetails = () => {
     }
   };
 
-  useEffect(() => {
+  useEffect(() => { // eslint-disable-line react-hooks/exhaustive-deps
     getJobItemDetails();
-  }, [id]);
+  });
 
   const renderLoaderView = () => (
     <div className="jobs-loader-container" data-testid="loader">
