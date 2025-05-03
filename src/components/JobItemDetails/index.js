@@ -94,11 +94,12 @@ const JobItemDetails = () => {
 
   useEffect(() => {
     getJobItemDetails();
-  }, []);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [id]);
 
   const renderLoaderView = () => (
     <div className="jobs-loader-container" data-testid="loader">
-      <div>Loading...</div>
+      <div className="loader"></div>
     </div>
   );
 

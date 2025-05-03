@@ -13,10 +13,10 @@
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^14.6.1",
     "js-cookie": "^3.0.5",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "react-icons": "^5.5.0",
-    "react-router-dom": "^7.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.12.0",
+    "react-router-dom": "^6.20.0",
     "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -30,8 +30,16 @@
   },
   "eslintConfig": {
     "extends": [
+      "react-app",
       "react-app/jest"
-    ]
+    ],
+    "plugins": [
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    }
   },
   "browserslist": {
     "production": [
@@ -48,6 +56,9 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "babel-eslint": "^10.1.0",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "gh-pages": "^6.3.0"
   }
 }
