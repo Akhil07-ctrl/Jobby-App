@@ -8,7 +8,7 @@ import JobItemDetails from './components/JobItemDetails';
 
 const App = () => {
   return (
-    <BrowserRouter basename='/Jobby-App'>
+    <BrowserRouter>
       <Routes>
         <Route path="/login" element={<Login />} />
         <Route path="/" element={<ProtectedRoute><Home /></ProtectedRoute>} />
